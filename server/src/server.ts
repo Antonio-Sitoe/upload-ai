@@ -9,6 +9,7 @@ const app = fastify();
 app.register(fastifyCors, {
   origin: '*',
 });
+
 app.register(get_all_prompts);
 app.register(uploadVideoRoute);
 app.register(generate_ai_completion);
